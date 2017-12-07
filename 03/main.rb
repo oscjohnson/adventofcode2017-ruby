@@ -1,5 +1,4 @@
-# input = 361527
-input = 361527
+input = ARGV.empty? ? 361527 : ARGV[0].to_i
 
 def run(input, part2 = false)
 	x = 0
@@ -31,7 +30,6 @@ def run(input, part2 = false)
 				end
 
 				if number >= input then
-					# puts grid	
 					return [x,y].map(&:abs).sum
 				end
 			}
